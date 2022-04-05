@@ -20,7 +20,7 @@ on:
 
 jobs:
   push_to_registry:
-  if: github.event.inputs.confirm == 'run'
+    if: github.event.inputs.confirm == 'run'
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
 
